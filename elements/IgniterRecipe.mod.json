@@ -10,19 +10,10 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:SoulIngot"
-      },
-      {
-        "value": "CUSTOM:SoulIngot"
-      },
-      {
         "value": ""
       },
       {
-        "value": "CUSTOM:SoulIngot"
-      },
-      {
-        "value": "Items.STICK"
+        "value": ""
       },
       {
         "value": ""
@@ -31,16 +22,25 @@
         "value": ""
       },
       {
-        "value": "Items.STICK"
+        "value": "Items.GOLDEN_APPLE"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.BLAZE_ROD"
+      },
+      {
+        "value": ""
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:SoulAxe"
+      "value": "CUSTOM:Igniter"
     },
-    "name": "soul_axe_recipe",
-    "namespace": "mod"
+    "name": "igniter_recipe",
+    "namespace": "minecraft"
   }
 }
