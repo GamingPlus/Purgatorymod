@@ -1,0 +1,30 @@
+{
+  "group": "inbetweendimension",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    " 4 ",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:blaze_rod"
+    },
+    "2": {
+      "item": "minecraft:blaze_rod"
+    },
+    "4": {
+      "item": "inbetweendimension:soul_core"
+    },
+    "6": {
+      "item": "minecraft:blaze_rod"
+    },
+    "8": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "result": {
+    "item": "inbetweendimension:soul_capturer",
+    "count": 1
+  }
+}

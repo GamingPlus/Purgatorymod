@@ -1,0 +1,88 @@
+{
+  "_fv": 8,
+  "_type": "biome",
+  "definition": {
+    "groundBlock": {
+      "value": "Blocks.STONE#3"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.STONE#0"
+    },
+    "generateLakes": false,
+    "treeType": 1,
+    "vanillaTreeType": "Mega spruce trees",
+    "minHeight": 30,
+    "spawnVines": true,
+    "treeVines": {
+      "value": "Blocks.VINE"
+    },
+    "treeStem": {
+      "value": "Blocks.SPRUCE_WOOD"
+    },
+    "treeBranch": {
+      "value": "Blocks.DARK_OAK_WOOD"
+    },
+    "treeFruits": {
+      "value": "Blocks.SKULL#3"
+    },
+    "customColors": true,
+    "airColor": {
+      "value": -5916161,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -6710887,
+      "falpha": 0.0
+    },
+    "treesPerChunk": 15,
+    "grassPerChunk": 23,
+    "flowersPerChunk": 17,
+    "mushroomsPerChunk": 5,
+    "bigMushroomsChunk": 8,
+    "sandPathcesPerChunk": 34,
+    "gravelPatchesPerChunk": 16,
+    "reedsPerChunk": 6,
+    "cactiPerChunk": 2,
+    "rainingPossibility": 0.0,
+    "temperature": 0.7,
+    "baseHeight": 0.4,
+    "heightVariation": 1.3,
+    "spawnBiome": true,
+    "biomeWeight": 20,
+    "biomeType": "WARM",
+    "biomeCategory": "EXTREME_HILLS",
+    "parent": {
+      "value": "CUSTOM:Inbetween"
+    },
+    "biomeDictionaryTypes": [
+      "WASTELAND",
+      "HILLS",
+      "FOREST",
+      "HOT",
+      "DEAD",
+      "SPOOKY",
+      "DENSE",
+      "MOUNTAIN",
+      "HILLS",
+      "MOUNTAIN"
+    ],
+    "spawnList": [
+      {
+        "value": "EntityAreaEffectCloud"
+      },
+      {
+        "value": "EntitySkeleton"
+      },
+      {
+        "value": "EntityCreeper"
+      },
+      {
+        "value": "EntityZombie"
+      }
+    ]
+  }
+}

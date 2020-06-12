@@ -1,0 +1,26 @@
+{
+  "_fv": 8,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "soulpickaxe",
+    "customModelName": "Normal",
+    "name": "Soul Pickaxe",
+    "specialInfo": [
+      "Tool To Dig 2x Faster Than Others"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:SoulTab"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 1,
+    "efficiency": 6.5,
+    "attackSpeed": 1.1,
+    "enchantability": 5,
+    "damageVsEntity": 4.1,
+    "usageCount": 100,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "repairItems": []
+  }
+}

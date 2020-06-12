@@ -1,0 +1,15 @@
+{
+  "_fv": 8,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "Z",
+    "keyBindingName": "Gui Key",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "GuiKeyOnKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "GuiKeyOnKeyReleased"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "_fv": 8,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "soulhelmet3",
+    "enableBody": true,
+    "textureBody": "soulchestplate",
+    "enableLeggings": true,
+    "textureLeggings": "soullegs",
+    "enableBoots": true,
+    "textureBoots": "soulstriders",
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "armorTextureFile": "soularmour1",
+    "helmetName": "SOUL Helmet",
+    "bodyName": "SOUL Chest",
+    "leggingsName": "SOUL Leggings",
+    "bootsName": "SOUL Walkers",
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "maxDamage": 30,
+    "damageValueHelmet": 3,
+    "damageValueBody": 7,
+    "damageValueLeggings": 6,
+    "damageValueBoots": 3,
+    "enchantability": 9,
+    "toughness": 2.5,
+    "equipSound": {
+      "value": "item.armor.equip_generic"
+    },
+    "repairItems": []
+  }
+}

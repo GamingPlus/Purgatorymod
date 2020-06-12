@@ -1,0 +1,32 @@
+{
+  "_fv": 8,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "replacement",
+    "customModelName": "Normal",
+    "name": "Soul Capture Ammo",
+    "creativeTab": {
+      "value": "CUSTOM:SoulTab"
+    },
+    "stackSize": 16,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 10,
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 10.0,
+    "specialInfo": [
+      "Used As Ammo For Soul Capsule"
+    ],
+    "hasGlow": true,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onEntityHitWith": {
+      "name": "SoulCapsuleBulletHitsLivingEntity"
+    }
+  }
+}

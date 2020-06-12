@@ -1,0 +1,94 @@
+{
+  "_fv": 8,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 382,
+    "height": 297,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "Nether",
+          "onClick": {
+            "name": "NetherWorldTeleport"
+          },
+          "width": 120,
+          "height": 40,
+          "name": "Nether",
+          "x": 361,
+          "y": 163
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "World",
+          "onClick": {
+            "name": "OverWorldTeleport"
+          },
+          "width": 100,
+          "height": 40,
+          "name": "World",
+          "x": 361,
+          "y": 109
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "End",
+          "onClick": {
+            "name": "EndWorldTeleport"
+          },
+          "width": 60,
+          "height": 40,
+          "name": "End",
+          "x": 361,
+          "y": 217
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "World Selector",
+          "color": {
+            "value": -13421569,
+            "falpha": 0.0
+          },
+          "name": "World Selector",
+          "x": 362,
+          "y": 366
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "InBetween",
+          "onClick": {
+            "name": "InBetweenTeleport"
+          },
+          "width": 180,
+          "height": 40,
+          "name": "InBetween",
+          "x": 358,
+          "y": 266
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Credit- GamingPlus_",
+          "color": {
+            "value": -13421569,
+            "falpha": 0.0
+          },
+          "name": "Credit- GamingPlus_",
+          "x": 334,
+          "y": 331
+        }
+      }
+    ]
+  }
+}

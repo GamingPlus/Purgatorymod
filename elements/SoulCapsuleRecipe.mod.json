@@ -1,0 +1,46 @@
+{
+  "_fv": 8,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "tools",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SoulIngot"
+      },
+      {
+        "value": "Items.SHEARS"
+      },
+      {
+        "value": "CUSTOM:SoulIngot"
+      },
+      {
+        "value": "CUSTOM:SoulIngot"
+      },
+      {
+        "value": "CUSTOM:SoulIngot"
+      },
+      {
+        "value": "CUSTOM:SoulIngot"
+      },
+      {
+        "value": "CUSTOM:SoulIngot"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SoulCapsule"
+    },
+    "name": "soul_capsule_recipe",
+    "namespace": "mod"
+  }
+}

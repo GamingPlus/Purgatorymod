@@ -1,0 +1,46 @@
+{
+  "_fv": 8,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "materials",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.STONE#3"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.COAL_ORE"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:GoodSoul"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.DIAMOND_ORE"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.IRON_ORE"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SoulCore"
+    },
+    "name": "soul_core_recipe",
+    "namespace": "mod"
+  }
+}

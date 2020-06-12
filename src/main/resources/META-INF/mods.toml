@@ -1,0 +1,30 @@
+modLoader="javafml"
+loaderVersion="[31,)"
+
+[[mods]]
+modId="inbetweendimension"
+version="1.1"
+displayName="InBetween Mod"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://mcreator.net"
+logoFile="logo.png"
+authors="GamingPlus_"
+description='''
+The Dimension Between Heaven And Hell
+'''
+
+[[dependencies.inbetweendimension]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.inbetweendimension]]
+    modId="forge"
+    mandatory=true
+    versionRange="[31.2.0]"
+    ordering="NONE"
+    side="BOTH"
+
+

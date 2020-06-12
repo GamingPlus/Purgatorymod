@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "inbetweendimension:block/the_inbetween_portal_ew"
+    },
+    "axis=x": {
+      "model": "inbetweendimension:block/the_inbetween_portal_ns"
+    }
+  }
+}

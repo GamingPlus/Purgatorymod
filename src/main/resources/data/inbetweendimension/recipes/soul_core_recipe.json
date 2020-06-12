@@ -1,0 +1,30 @@
+{
+  "group": "materials",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    " 4 ",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:diorite"
+    },
+    "2": {
+      "item": "minecraft:coal_ore"
+    },
+    "4": {
+      "item": "inbetweendimension:good_soul"
+    },
+    "6": {
+      "item": "minecraft:diamond_ore"
+    },
+    "8": {
+      "item": "minecraft:iron_ore"
+    }
+  },
+  "result": {
+    "item": "inbetweendimension:soul_core",
+    "count": 1
+  }
+}

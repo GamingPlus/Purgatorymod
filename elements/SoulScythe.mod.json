@@ -1,0 +1,29 @@
+{
+  "_fv": 8,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "soulscythe",
+    "customModelName": "Normal",
+    "name": "Soul Scythe",
+    "specialInfo": [
+      "You're the grim reaper now"
+    ],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "toolType": "Special",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.1,
+    "enchantability": 2,
+    "damageVsEntity": 5.0,
+    "usageCount": 100,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "repairItems": [],
+    "onEntityHitWith": {
+      "name": "SoulScytheLivingEntityIsHitWithTool"
+    }
+  }
+}
