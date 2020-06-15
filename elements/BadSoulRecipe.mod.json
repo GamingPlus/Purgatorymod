@@ -7,7 +7,7 @@
     "cookingTime": 200,
     "recipeRetstackSize": 1,
     "group": "",
-    "recipeShapeless": false,
+    "recipeShapeless": true,
     "recipeSlots": [
       {
         "value": ""
@@ -22,7 +22,7 @@
         "value": "Items.NETHER_STAR"
       },
       {
-        "value": "CUSTOM:SoulOresOreBlock"
+        "value": "CUSTOM:SoulCore"
       },
       {
         "value": "Items.NETHER_STAR"

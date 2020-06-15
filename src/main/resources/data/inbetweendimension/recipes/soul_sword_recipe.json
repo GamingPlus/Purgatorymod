@@ -1,22 +1,17 @@
 {
   "group": "inbetweendimension",
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "  2",
-    " 4 ",
-    "6  "
-  ],
-  "key": {
-    "2": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "inbetweendimension:soul_ingot"
     },
-    "4": {
+    {
       "item": "inbetweendimension:soul_ingot"
     },
-    "6": {
+    {
       "item": "minecraft:blaze_rod"
     }
-  },
+  ],
   "result": {
     "item": "inbetweendimension:soul_sword",
     "count": 1

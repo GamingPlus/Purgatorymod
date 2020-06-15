@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "inbetweendimension:igniter",
+    "inbetweendimension:soul_sword",
+    "inbetweendimension:good_soul",
+    "inbetweendimension:soul_pickaxe",
+    "inbetweendimension:soul_axe",
+    "inbetweendimension:bad_soul",
+    "inbetweendimension:soul_scythe",
+    "inbetweendimension:soul_ingot",
+    "inbetweendimension:soularmourhelmet",
+    "inbetweendimension:soularmourbody",
+    "inbetweendimension:soularmourlegs",
+    "inbetweendimension:soularmourboots",
+    "inbetweendimension:soul_core",
+    "inbetweendimension:soul_capturer",
+    "inbetweendimension:soul_capsule",
+    "inbetweendimension:soul_core_ore"
+  ]
+}

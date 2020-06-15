@@ -1,28 +1,23 @@
 {
   "group": "inbetweendimension",
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    " 1 ",
-    "345",
-    " 7 "
-  ],
-  "key": {
-    "1": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "minecraft:wither_skeleton_wall_skull"
     },
-    "3": {
+    {
       "item": "minecraft:nether_star"
     },
-    "4": {
-      "item": "inbetweendimension:soul_ores_ore_block"
+    {
+      "item": "inbetweendimension:soul_core"
     },
-    "5": {
+    {
       "item": "minecraft:nether_star"
     },
-    "7": {
+    {
       "item": "minecraft:netherrack"
     }
-  },
+  ],
   "result": {
     "item": "inbetweendimension:bad_soul",
     "count": 1

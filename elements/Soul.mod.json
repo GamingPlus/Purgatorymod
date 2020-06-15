@@ -1,0 +1,61 @@
+{
+  "_fv": 8,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Igniter"
+      },
+      {
+        "value": "CUSTOM:SoulSword"
+      },
+      {
+        "value": "CUSTOM:GoodSoul"
+      },
+      {
+        "value": "CUSTOM:SoulPickaxe"
+      },
+      {
+        "value": "CUSTOM:SoulAxe"
+      },
+      {
+        "value": "CUSTOM:BadSoul"
+      },
+      {
+        "value": "CUSTOM:SoulScythe"
+      },
+      {
+        "value": "CUSTOM:SoulIngot"
+      },
+      {
+        "value": "CUSTOM:SOULARMOUR.helmet"
+      },
+      {
+        "value": "CUSTOM:SOULARMOUR.body"
+      },
+      {
+        "value": "CUSTOM:SOULARMOUR.legs"
+      },
+      {
+        "value": "CUSTOM:SOULARMOUR.boots"
+      },
+      {
+        "value": "CUSTOM:SoulCore"
+      },
+      {
+        "value": "CUSTOM:SoulCapturer"
+      },
+      {
+        "value": "CUSTOM:SoulCapsule"
+      },
+      {
+        "value": "CUSTOM:SoulCoreOre"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "soul",
+    "namespace": "forge"
+  }
+}

@@ -1,7 +1,10 @@
 {
-  "group": "tools",
+  "group": "inbetweendimension",
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
+    {
+      "item": "inbetweendimension:soul_ingot"
+    },
     {
       "item": "inbetweendimension:soul_ingot"
     },
@@ -19,7 +22,7 @@
     }
   ],
   "result": {
-    "item": "inbetweendimension:soul_pickaxe",
+    "item": "inbetweendimension:soul_scythe",
     "count": 1
   }
 }

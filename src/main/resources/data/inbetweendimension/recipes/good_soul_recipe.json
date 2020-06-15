@@ -1,18 +1,14 @@
 {
   "group": "inbetweendimension",
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "0",
-    "1"
-  ],
-  "key": {
-    "0": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "minecraft:golden_apple"
     },
-    "1": {
+    {
       "item": "minecraft:glowstone_dust"
     }
-  },
+  ],
   "result": {
     "item": "inbetweendimension:good_soul",
     "count": 1

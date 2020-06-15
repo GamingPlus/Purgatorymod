@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "originalcapsule"
+        "1": "originalcapsule"
       },
       "name": "default"
     }
