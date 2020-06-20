@@ -606,6 +606,44 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "soul_scythe_recipe"
+    },
+    {
+      "name": "PurgatoryDivineRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purgatory_divine_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PurgatoryDivine",
+      "type": "tool",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purgatory_divine"
     }
   ],
   "variable_elements": [],
@@ -639,6 +677,7 @@
       "item.projectwip.soul_pickaxe": "Soul Pickaxe",
       "item.inbetweendimension.soul_capturer": "Soul Capture Ammo",
       "item.projectwip.soul_armor_armorhelmet": "Soul Helmet",
+      "item.inbetweendimension.purgatory_divine": "Purgatory Divine",
       "item.projectwip.soul_armor_armorlegs": "Soul Leggings",
       "item.projectwip.soul_axe": "Soul Axe",
       "item.inbetweendimension.soularmourbody": "SOUL Chest",

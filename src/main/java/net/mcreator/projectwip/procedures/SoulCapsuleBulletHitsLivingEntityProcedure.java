@@ -5,8 +5,8 @@ import net.minecraftforge.items.ItemHandlerHelper;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.passive.AnimalEntity;
-import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.CreatureEntity;
 
 import net.mcreator.projectwip.item.GoodSoulItem;
 import net.mcreator.projectwip.item.BadSoulItem;
@@ -30,15 +30,15 @@ public class SoulCapsuleBulletHitsLivingEntityProcedure extends Inbetweendimensi
 		Entity entity = (Entity) dependencies.get("entity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
 		if ((entity instanceof AnimalEntity)) {
-			if ((Math.random() < 0.4)) {
+			if ((Math.random() <= 0.4)) {
 				if (sourceentity instanceof PlayerEntity) {
 					ItemStack _setstack = new ItemStack(GoodSoulItem.block, (int) (1));
 					_setstack.setCount((int) 1);
 					ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) sourceentity), _setstack);
 				}
 			}
-			if ((entity instanceof MonsterEntity)) {
-				if ((Math.random() < 0.4)) {
+			if ((entity instanceof CreatureEntity)) {
+				if ((Math.random() <= 0.4)) {
 					if (sourceentity instanceof PlayerEntity) {
 						ItemStack _setstack = new ItemStack(BadSoulItem.block, (int) (1));
 						_setstack.setCount((int) 1);

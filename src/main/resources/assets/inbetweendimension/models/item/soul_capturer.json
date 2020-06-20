@@ -1,6 +1,6 @@
 {
-  "parent": "item/generated",
+  "parent": "inbetweendimension:custom/capturecapsuleobj",
   "textures": {
-    "layer0": "inbetweendimension:items/replacement"
+    "1": "inbetweendimension:blocks/originalcapsule"
   }
 }

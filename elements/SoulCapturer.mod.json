@@ -2,9 +2,9 @@
   "_fv": 8,
   "_type": "item",
   "definition": {
-    "renderType": 0,
+    "renderType": 1,
     "texture": "replacement",
-    "customModelName": "Normal",
+    "customModelName": "capturecapsuleobj:default",
     "name": "Soul Capture Ammo",
     "creativeTab": {
       "value": "CUSTOM:SoulTab"

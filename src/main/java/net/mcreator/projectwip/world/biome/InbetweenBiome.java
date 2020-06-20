@@ -88,7 +88,7 @@ public class InbetweenBiome extends InbetweendimensionModElements.ModElement {
 			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 					new CustomTreeFeature()
 							.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.SPRUCE_WOOD.getDefaultState()),
-									new SimpleBlockStateProvider(Blocks.DARK_OAK_WOOD.getDefaultState()))).baseHeight(30)
+									new SimpleBlockStateProvider(Blocks.OAK_LEAVES.getDefaultState()))).baseHeight(30)
 											.setSapling((net.minecraftforge.common.IPlantable) Blocks.JUNGLE_SAPLING).build())
 							.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(15, 0.1F, 1))));
 			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_BOOLEAN_SELECTOR
@@ -188,8 +188,8 @@ public class InbetweenBiome extends InbetweendimensionModElements.ModElement {
 										state = world.getBlockState(blockpos);
 										if (state.getBlock().isAir(state, world, blockpos) || state.getMaterial().blocksMovement()
 												|| state.isIn(BlockTags.LEAVES) || state.getBlock() == Blocks.VINE.getDefaultState().getBlock()
-												|| state.getBlock() == Blocks.DARK_OAK_WOOD.getDefaultState().getBlock()) {
-											setTreeBlockState(changedBlocks, world, blockpos, Blocks.DARK_OAK_WOOD.getDefaultState(), bbox);
+												|| state.getBlock() == Blocks.OAK_LEAVES.getDefaultState().getBlock()) {
+											setTreeBlockState(changedBlocks, world, blockpos, Blocks.OAK_LEAVES.getDefaultState(), bbox);
 										}
 									}
 								}
@@ -201,7 +201,7 @@ public class InbetweenBiome extends InbetweendimensionModElements.ModElement {
 							setTreeBlockState(changedBlocks, world, genhPos, Blocks.SPRUCE_WOOD.getDefaultState(), bbox);
 							if (state.getBlock().isAir(state, world, genhPos) || state.getMaterial().blocksMovement() || state.isIn(BlockTags.LEAVES)
 									|| state.getBlock() == Blocks.VINE.getDefaultState().getBlock()
-									|| state.getBlock() == Blocks.DARK_OAK_WOOD.getDefaultState().getBlock()) {
+									|| state.getBlock() == Blocks.OAK_LEAVES.getDefaultState().getBlock()) {
 								if (genh > 0) {
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(-1, genh, 0)))
 										setTreeBlockState(changedBlocks, world, position.add(-1, genh, 0), Blocks.VINE.getDefaultState(), bbox);
@@ -220,7 +220,7 @@ public class InbetweenBiome extends InbetweendimensionModElements.ModElement {
 								for (int genz = position.getZ() - k4; genz <= position.getZ() + k4; genz++) {
 									BlockPos bpos = new BlockPos(genx, genh, genz);
 									state = world.getBlockState(bpos);
-									if (state.isIn(BlockTags.LEAVES) || state.getBlock() == Blocks.DARK_OAK_WOOD.getDefaultState().getBlock()) {
+									if (state.isIn(BlockTags.LEAVES) || state.getBlock() == Blocks.OAK_LEAVES.getDefaultState().getBlock()) {
 										BlockPos blockpos1 = bpos.south();
 										BlockPos blockpos2 = bpos.west();
 										BlockPos blockpos3 = bpos.east();
@@ -269,7 +269,7 @@ public class InbetweenBiome extends InbetweendimensionModElements.ModElement {
 
 		private boolean canGrowInto(Block blockType) {
 			return blockType.getDefaultState().getMaterial() == Material.AIR || blockType == Blocks.SPRUCE_WOOD.getDefaultState().getBlock()
-					|| blockType == Blocks.DARK_OAK_WOOD.getDefaultState().getBlock() || blockType == Blocks.DIORITE.getDefaultState().getBlock()
+					|| blockType == Blocks.OAK_LEAVES.getDefaultState().getBlock() || blockType == Blocks.DIORITE.getDefaultState().getBlock()
 					|| blockType == Blocks.STONE.getDefaultState().getBlock();
 		}
 
