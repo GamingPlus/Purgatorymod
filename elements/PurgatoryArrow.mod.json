@@ -1,0 +1,30 @@
+{
+  "_fv": 8,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "purgatoryarrow",
+    "customModelName": "Normal",
+    "name": "Purgatory Arrow",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "stackSize": 64,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 23,
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 1.7000000000000002,
+    "specialInfo": [],
+    "hasGlow": true,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onEntityHitWith": {
+      "name": "PurgatoryArrowLivingEntityIsHitWithItem"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "group": "inbetweendimension",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "34 ",
+    "6  "
+  ],
+  "key": {
+    "1": {
+      "item": "inbetweendimension:soul_ingot"
+    },
+    "2": {
+      "item": "minecraft:blaze_rod"
+    },
+    "3": {
+      "item": "inbetweendimension:soul_ingot"
+    },
+    "4": {
+      "item": "inbetweendimension:good_soul"
+    },
+    "6": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "result": {
+    "item": "inbetweendimension:purgatory_divine_bow",
+    "count": 1
+  }
+}

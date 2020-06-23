@@ -9,10 +9,8 @@ import net.minecraft.world.World;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.Hand;
 import net.minecraft.util.Direction;
 import net.minecraft.util.ActionResultType;
-import net.minecraft.util.ActionResult;
 import net.minecraft.item.ItemUseContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
@@ -25,8 +23,7 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.projectwip.procedures.PurgatoryDivineRightClickedOnBlockProcedure;
-import net.mcreator.projectwip.procedures.PurgatoryDivineRightClickedInAirProcedure;
-import net.mcreator.projectwip.procedures.PurgatoryDivineLivingEntityIsHitWithToolProcedure;
+import net.mcreator.projectwip.procedures.PurgatoryDivine2LivingEntityIsHitWithToolProcedure;
 import net.mcreator.projectwip.itemgroup.SoulTabItemGroup;
 import net.mcreator.projectwip.InbetweendimensionModElements;
 
@@ -35,11 +32,11 @@ import java.util.List;
 import com.google.common.collect.Multimap;
 
 @InbetweendimensionModElements.ModElement.Tag
-public class PurgatoryDivineItem extends InbetweendimensionModElements.ModElement {
-	@ObjectHolder("inbetweendimension:purgatory_divine")
+public class PurgatoryDivine2Item extends InbetweendimensionModElements.ModElement {
+	@ObjectHolder("inbetweendimension:purgatory_divine_2")
 	public static final Item block = null;
-	public PurgatoryDivineItem(InbetweendimensionModElements instance) {
-		super(instance, 66);
+	public PurgatoryDivine2Item(InbetweendimensionModElements instance) {
+		super(instance, 70);
 	}
 
 	@Override
@@ -48,25 +45,7 @@ public class PurgatoryDivineItem extends InbetweendimensionModElements.ModElemen
 			@Override
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);
-				list.add(new StringTextComponent("The Divine Tool Tool Create Purgatory"));
-			}
-
-			@Override
-			public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity entity, Hand hand) {
-				ActionResult<ItemStack> retval = super.onItemRightClick(world, entity, hand);
-				ItemStack itemstack = retval.getResult();
-				int x = (int) entity.getPosX();
-				int y = (int) entity.getPosY();
-				int z = (int) entity.getPosZ();
-				{
-					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					$_dependencies.put("world", world);
-					PurgatoryDivineRightClickedInAirProcedure.executeProcedure($_dependencies);
-				}
-				return retval;
+				list.add(new StringTextComponent("Purgatory's Divine 2nd Creation Tool"));
 			}
 
 			@Override
@@ -100,11 +79,12 @@ public class PurgatoryDivineItem extends InbetweendimensionModElements.ModElemen
 				World world = entity.world;
 				{
 					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+					$_dependencies.put("entity", entity);
 					$_dependencies.put("x", x);
 					$_dependencies.put("y", y);
 					$_dependencies.put("z", z);
 					$_dependencies.put("world", world);
-					PurgatoryDivineLivingEntityIsHitWithToolProcedure.executeProcedure($_dependencies);
+					PurgatoryDivine2LivingEntityIsHitWithToolProcedure.executeProcedure($_dependencies);
 				}
 				return retval;
 			}
@@ -114,7 +94,7 @@ public class PurgatoryDivineItem extends InbetweendimensionModElements.ModElemen
 			public boolean hasEffect(ItemStack itemstack) {
 				return true;
 			}
-		}.setRegistryName("purgatory_divine"));
+		}.setRegistryName("purgatory_divine_2"));
 	}
 	private static class ItemToolCustom extends Item {
 		protected ItemToolCustom() {
@@ -126,9 +106,9 @@ public class PurgatoryDivineItem extends InbetweendimensionModElements.ModElemen
 			Multimap<String, AttributeModifier> multimap = super.getAttributeModifiers(equipmentSlot);
 			if (equipmentSlot == EquipmentSlotType.MAINHAND) {
 				multimap.put(SharedMonsterAttributes.ATTACK_DAMAGE.getName(),
-						new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "Tool modifier", 6f, AttributeModifier.Operation.ADDITION));
+						new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "Tool modifier", 3f, AttributeModifier.Operation.ADDITION));
 				multimap.put(SharedMonsterAttributes.ATTACK_SPEED.getName(),
-						new AttributeModifier(ATTACK_SPEED_MODIFIER, "Tool modifier", -2, AttributeModifier.Operation.ADDITION));
+						new AttributeModifier(ATTACK_SPEED_MODIFIER, "Tool modifier", 1, AttributeModifier.Operation.ADDITION));
 			}
 			return multimap;
 		}
@@ -140,7 +120,7 @@ public class PurgatoryDivineItem extends InbetweendimensionModElements.ModElemen
 
 		@Override
 		public float getDestroySpeed(ItemStack itemstack, BlockState blockstate) {
-			return 5f;
+			return 5.5f;
 		}
 
 		@Override
@@ -157,7 +137,7 @@ public class PurgatoryDivineItem extends InbetweendimensionModElements.ModElemen
 
 		@Override
 		public int getItemEnchantability() {
-			return 4;
+			return 5;
 		}
 	}
 }

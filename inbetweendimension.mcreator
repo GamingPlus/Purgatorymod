@@ -644,6 +644,193 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "purgatory_divine"
+    },
+    {
+      "name": "SoulBlock",
+      "type": "block",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "soul_block"
+    },
+    {
+      "name": "PurgatoryDivineLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purgatory_divine_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PurgatoryDivineRightClickedInAir",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purgatory_divine_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PurgatoryDivine2LivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purgatory_divine_2_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PurgatoryDivine2",
+      "type": "tool",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purgatory_divine_2"
+    },
+    {
+      "name": "Spawn",
+      "type": "structure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawn"
+    },
+    {
+      "name": "PurgatoryArrowLivingEntityIsHitWithItem",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purgatory_arrow_living_entity_is_hit_with_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PurgatoryArrow",
+      "type": "item",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purgatory_arrow"
+    },
+    {
+      "name": "PurgatoryDivineBow",
+      "type": "gun",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purgatory_divine_bow"
+    },
+    {
+      "name": "PurgatoryBowRecipe",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purgatory_bow_recipe"
+    },
+    {
+      "name": "PurgatoryArrowRecipe",
+      "type": "recipe",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purgatory_arrow_recipe"
     }
   ],
   "variable_elements": [],
@@ -663,8 +850,10 @@
       "block.projectwip.soul_ores_ore": "Soul Ore",
       "item.projectwip.soul_sword": "Soul Sword",
       "item.projectwip.soul_ores_ingot": "Soul Ingot",
+      "item.inbetweendimension.purgatory_arrow": "Purgatory Arrow",
       "item.inbetweendimension.soularmourboots": "SOUL Walkers",
       "item.inbetweendimension.soul_ingot": "Soul Ingot",
+      "item.inbetweendimension.purgatory_divine_2": "Purgatory Divine 2",
       "block.projectwip.soul_ores_ore_block": "Block of Soul",
       "item.projectwip.good_soul": "Good Soul",
       "item.inbetweendimension.soul_pickaxe": "Soul Pickaxe",
@@ -672,6 +861,8 @@
       "item.inbetweendimension.soul_capsule": "Soul Ripper",
       "item.projectwip.soul_armor_armorboots": "Soul Boots",
       "item.inbetweendimension.soularmourlegs": "SOUL Leggings",
+      "block.inbetweendimension.soul_block": "Soul Block",
+      "item.inbetweendimension.purgatory_divine_bow": "Purgatory Divine Bow",
       "item.inbetweendimension.soul_axe": "Soul Axe",
       "item.projectwip.soul_armor_armorbody": "Soul Chestplate",
       "item.projectwip.soul_pickaxe": "Soul Pickaxe",

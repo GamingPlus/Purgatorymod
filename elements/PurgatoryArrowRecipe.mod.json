@@ -1,0 +1,46 @@
+{
+  "_fv": 8,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:SoulIngot"
+      },
+      {
+        "value": "CUSTOM:SoulIngot"
+      },
+      {
+        "value": "CUSTOM:GoodSoul"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.BLAZE_ROD"
+      },
+      {
+        "value": "CUSTOM:SoulIngot"
+      },
+      {
+        "value": "Items.BLAZE_ROD"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SoulIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PurgatoryArrow"
+    },
+    "name": "purgatory_arrow_recipe",
+    "namespace": "mod"
+  }
+}

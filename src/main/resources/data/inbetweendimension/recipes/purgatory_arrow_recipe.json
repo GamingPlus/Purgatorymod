@@ -1,0 +1,36 @@
+{
+  "group": "inbetweendimension",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 45",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "inbetweendimension:soul_ingot"
+    },
+    "1": {
+      "item": "inbetweendimension:soul_ingot"
+    },
+    "2": {
+      "item": "inbetweendimension:good_soul"
+    },
+    "4": {
+      "item": "minecraft:blaze_rod"
+    },
+    "5": {
+      "item": "inbetweendimension:soul_ingot"
+    },
+    "6": {
+      "item": "minecraft:blaze_rod"
+    },
+    "8": {
+      "item": "inbetweendimension:soul_ingot"
+    }
+  },
+  "result": {
+    "item": "inbetweendimension:purgatory_arrow",
+    "count": 1
+  }
+}

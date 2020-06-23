@@ -3,33 +3,30 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "souldivine",
+    "texture": "souldivine2",
     "customModelName": "Normal",
-    "name": "Purgatory Divine",
+    "name": "Purgatory Divine 2",
     "specialInfo": [
-      "The Divine Tool Tool Create Purgatory"
+      "Purgatory's Divine 2nd Creation Tool"
     ],
     "creativeTab": {
       "value": "CUSTOM:SoulTab"
     },
     "toolType": "MultiTool",
     "harvestLevel": 1,
-    "efficiency": 5.0,
-    "attackSpeed": 2.0,
-    "enchantability": 4,
-    "damageVsEntity": 8.0,
+    "efficiency": 5.5,
+    "attackSpeed": 5.0,
+    "enchantability": 5,
+    "damageVsEntity": 5.0,
     "usageCount": 100,
     "blocksAffected": [],
     "hasGlow": true,
     "repairItems": [],
-    "onRightClickedInAir": {
-      "name": "PurgatoryDivineRightClickedInAir"
-    },
     "onRightClickedOnBlock": {
       "name": "PurgatoryDivineRightClickedOnBlock"
     },
     "onEntityHitWith": {
-      "name": "PurgatoryDivineLivingEntityIsHitWithTool"
+      "name": "PurgatoryDivine2LivingEntityIsHitWithTool"
     }
   }
 }
