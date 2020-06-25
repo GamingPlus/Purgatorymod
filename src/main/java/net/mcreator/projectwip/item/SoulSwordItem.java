@@ -66,9 +66,9 @@ public class SoulSwordItem extends InbetweendimensionModElements.ModElement {
 			@Override
 			public boolean hitEntity(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 				boolean retval = super.hitEntity(itemstack, entity, sourceentity);
-				int x = (int) entity.getPosX();
-				int y = (int) entity.getPosY();
-				int z = (int) entity.getPosZ();
+				int x = (int) entity.posX;
+				int y = (int) entity.posY;
+				int z = (int) entity.posZ;
 				World world = entity.world;
 				{
 					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();

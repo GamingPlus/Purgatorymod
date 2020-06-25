@@ -74,9 +74,9 @@ public class IgniterItem extends InbetweendimensionModElements.ModElement {
 		public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity entity, Hand hand) {
 			ActionResult<ItemStack> ar = super.onItemRightClick(world, entity, hand);
 			ItemStack itemstack = ar.getResult();
-			int x = (int) entity.getPosX();
-			int y = (int) entity.getPosY();
-			int z = (int) entity.getPosZ();
+			int x = (int) entity.posX;
+			int y = (int) entity.posY;
+			int z = (int) entity.posZ;
 			{
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
 				IgniterRightClickedInAirProcedure.executeProcedure($_dependencies);
@@ -87,9 +87,9 @@ public class IgniterItem extends InbetweendimensionModElements.ModElement {
 		@Override
 		public void onCreated(ItemStack itemstack, World world, PlayerEntity entity) {
 			super.onCreated(itemstack, world, entity);
-			int x = (int) entity.getPosX();
-			int y = (int) entity.getPosY();
-			int z = (int) entity.getPosZ();
+			int x = (int) entity.posX;
+			int y = (int) entity.posY;
+			int z = (int) entity.posZ;
 			{
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
 				$_dependencies.put("itemstack", itemstack);
@@ -100,9 +100,9 @@ public class IgniterItem extends InbetweendimensionModElements.ModElement {
 		@Override
 		public void inventoryTick(ItemStack itemstack, World world, Entity entity, int slot, boolean selected) {
 			super.inventoryTick(itemstack, world, entity, slot, selected);
-			int x = (int) entity.getPosX();
-			int y = (int) entity.getPosY();
-			int z = (int) entity.getPosZ();
+			int x = (int) entity.posX;
+			int y = (int) entity.posY;
+			int z = (int) entity.posZ;
 			{
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
 				IgniterItemInInventoryTickProcedure.executeProcedure($_dependencies);

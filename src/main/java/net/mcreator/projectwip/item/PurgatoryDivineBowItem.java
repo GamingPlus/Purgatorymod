@@ -61,7 +61,7 @@ public class PurgatoryDivineBowItem extends InbetweendimensionModElements.ModEle
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void init(FMLCommonSetupEvent event) {
-		RenderingRegistry.registerEntityRenderingHandler(arrow,
+		RenderingRegistry.registerEntityRenderingHandler(ArrowCustomEntity.class,
 				renderManager -> new SpriteRenderer(renderManager, Minecraft.getInstance().getItemRenderer()));
 	}
 	public static class ItemRanged extends Item {
@@ -170,9 +170,9 @@ public class PurgatoryDivineBowItem extends InbetweendimensionModElements.ModEle
 			super.arrowHit(entity);
 			entity.setArrowCountInEntity(entity.getArrowCountInEntity() - 1);
 			Entity sourceentity = this.getShooter();
-			int x = (int) this.getPosX();
-			int y = (int) this.getPosY();
-			int z = (int) this.getPosZ();
+			int x = (int) this.posX;
+			int y = (int) this.posY;
+			int z = (int) this.posZ;
 			World world = this.world;
 			{
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
@@ -188,9 +188,9 @@ public class PurgatoryDivineBowItem extends InbetweendimensionModElements.ModEle
 		@Override
 		public void tick() {
 			super.tick();
-			int x = (int) this.getPosX();
-			int y = (int) this.getPosY();
-			int z = (int) this.getPosZ();
+			int x = (int) this.posX;
+			int y = (int) this.posY;
+			int z = (int) this.posZ;
 			World world = this.world;
 			Entity entity = this.getShooter();
 			if (this.inGround) {
@@ -207,9 +207,9 @@ public class PurgatoryDivineBowItem extends InbetweendimensionModElements.ModEle
 		entityarrow.setKnockbackStrength(knockback);
 		entityarrow.setFire(100);
 		world.addEntity(entityarrow);
-		int x = (int) entity.getPosX();
-		int y = (int) entity.getPosY();
-		int z = (int) entity.getPosZ();
+		int x = (int) entity.posX;
+		int y = (int) entity.posY;
+		int z = (int) entity.posZ;
 		world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
 				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")),
 				SoundCategory.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
@@ -218,17 +218,17 @@ public class PurgatoryDivineBowItem extends InbetweendimensionModElements.ModEle
 
 	public static ArrowCustomEntity shoot(LivingEntity entity, LivingEntity target) {
 		ArrowCustomEntity entityarrow = new ArrowCustomEntity(arrow, entity, entity.world);
-		double d0 = target.getPosY() + (double) target.getEyeHeight() - 1.1;
-		double d1 = target.getPosX() - entity.getPosX();
-		double d3 = target.getPosZ() - entity.getPosZ();
-		entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 1.6F, 12.0F);
+		double d0 = target.posY + (double) target.getEyeHeight() - 1.1;
+		double d1 = target.posX - entity.posX;
+		double d3 = target.posZ - entity.posZ;
+		entityarrow.shoot(d1, d0 - entityarrow.posY + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 1.6F, 12.0F);
 		entityarrow.setSilent(true);
 		entityarrow.setIsCritical(true);
 		entityarrow.setFire(100);
 		entity.world.addEntity(entityarrow);
-		int x = (int) entity.getPosX();
-		int y = (int) entity.getPosY();
-		int z = (int) entity.getPosZ();
+		int x = (int) entity.posX;
+		int y = (int) entity.posY;
+		int z = (int) entity.posZ;
 		entity.world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
 				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")),
 				SoundCategory.PLAYERS, 1, 1f / (new Random().nextFloat() * 0.5f + 1));

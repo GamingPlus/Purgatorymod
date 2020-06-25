@@ -2,6 +2,7 @@ package net.mcreator.projectwip.procedures;
 
 import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.block.material.Material;
 import net.minecraft.block.Blocks;
 
 import net.mcreator.projectwip.block.SoulBlockBlock;
@@ -34,7 +35,7 @@ public class PurgatoryDivineRightClickedOnBlockProcedure extends Inbetweendimens
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
-		if ((Blocks.WATER.getDefaultState().getMaterial() == net.minecraft.block.material.Material.WATER)) {
+		if ((Blocks.WATER.getDefaultState().getMaterial() == Material.WATER)) {
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), SoulBlockBlock.block.getDefaultState(), 3);
 		}
 	}

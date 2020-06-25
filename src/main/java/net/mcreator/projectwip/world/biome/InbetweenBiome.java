@@ -16,10 +16,13 @@ import net.minecraft.world.gen.placement.ChanceConfig;
 import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
 import net.minecraft.world.gen.feature.TwoFeatureChoiceConfig;
 import net.minecraft.world.gen.feature.SphereReplaceConfig;
+import net.minecraft.world.gen.feature.NoFeatureConfig;
+import net.minecraft.world.gen.feature.IFeatureConfig;
+import net.minecraft.world.gen.feature.GrassFeatureConfig;
 import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.BaseTreeFeatureConfig;
+import net.minecraft.world.gen.feature.BushConfig;
+import net.minecraft.world.gen.feature.BigMushroomFeatureConfig;
 import net.minecraft.world.gen.feature.AbstractTreeFeature;
-import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
 import net.minecraft.world.gen.IWorldGenerationReader;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
@@ -76,39 +79,35 @@ public class InbetweenBiome extends InbetweendimensionModElements.ModElement {
 			DefaultBiomeFeatures.addStructures(this);
 			DefaultBiomeFeatures.addMonsterRooms(this);
 			DefaultBiomeFeatures.addOres(this);
-			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.FLOWER.withConfiguration(DefaultBiomeFeatures.DEFAULT_FLOWER_CONFIG)
-					.withPlacement(Placement.COUNT_HEIGHTMAP_32.configure(new FrequencyConfig(17))));
-			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_PATCH.withConfiguration(DefaultBiomeFeatures.GRASS_CONFIG)
-					.withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(23))));
+			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(Feature.DEFAULT_FLOWER,
+					IFeatureConfig.NO_FEATURE_CONFIG, Placement.COUNT_HEIGHTMAP_32, new FrequencyConfig(17)));
+			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(Feature.GRASS,
+					new GrassFeatureConfig(Blocks.GRASS.getDefaultState()), Placement.COUNT_HEIGHTMAP_DOUBLE, new FrequencyConfig(23)));
+			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(Feature.BUSH,
+					new BushConfig(Blocks.BROWN_MUSHROOM.getDefaultState()), Placement.CHANCE_HEIGHTMAP_DOUBLE, new ChanceConfig(5)));
+			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(Feature.BUSH,
+					new BushConfig(Blocks.RED_MUSHROOM.getDefaultState()), Placement.CHANCE_HEIGHTMAP_DOUBLE, new ChanceConfig(5)));
+			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(new CustomTreeFeature(),
+					IFeatureConfig.NO_FEATURE_CONFIG, Placement.COUNT_EXTRA_HEIGHTMAP, new AtSurfaceWithExtraConfig(15, 0.1F, 1)));
 			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
-					Feature.RANDOM_PATCH.withConfiguration(DefaultBiomeFeatures.BROWN_MUSHROOM_CONFIG)
-							.withPlacement(Placement.CHANCE_HEIGHTMAP_DOUBLE.configure(new ChanceConfig(5))));
-			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_PATCH.withConfiguration(DefaultBiomeFeatures.RED_MUSHROOM_CONFIG)
-					.withPlacement(Placement.CHANCE_HEIGHTMAP_DOUBLE.configure(new ChanceConfig(5))));
-			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
-					new CustomTreeFeature()
-							.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.SPRUCE_WOOD.getDefaultState()),
-									new SimpleBlockStateProvider(Blocks.OAK_LEAVES.getDefaultState()))).baseHeight(30)
-											.setSapling((net.minecraftforge.common.IPlantable) Blocks.JUNGLE_SAPLING).build())
-							.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(15, 0.1F, 1))));
-			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_BOOLEAN_SELECTOR
-					.withConfiguration(new TwoFeatureChoiceConfig(Feature.HUGE_RED_MUSHROOM.withConfiguration(DefaultBiomeFeatures.BIG_RED_MUSHROOM),
-							Feature.HUGE_BROWN_MUSHROOM.withConfiguration(DefaultBiomeFeatures.BIG_BROWN_MUSHROOM)))
-					.withPlacement(Placement.COUNT_HEIGHTMAP.configure(new FrequencyConfig(8))));
-			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_PATCH.withConfiguration(DefaultBiomeFeatures.SUGAR_CANE_CONFIG)
-					.withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(6))));
-			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_PATCH.withConfiguration(DefaultBiomeFeatures.CACTUS_CONFIG)
-					.withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(2))));
+					Biome.createDecoratedFeature(
+							Feature.RANDOM_BOOLEAN_SELECTOR, new TwoFeatureChoiceConfig(Feature.HUGE_RED_MUSHROOM,
+									new BigMushroomFeatureConfig(false), Feature.HUGE_BROWN_MUSHROOM, new BigMushroomFeatureConfig(false)),
+							Placement.COUNT_HEIGHTMAP, new FrequencyConfig(8)));
+			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(Feature.REED, IFeatureConfig.NO_FEATURE_CONFIG,
+					Placement.COUNT_HEIGHTMAP_DOUBLE, new FrequencyConfig(6)));
+			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(Feature.CACTUS, IFeatureConfig.NO_FEATURE_CONFIG,
+					Placement.COUNT_HEIGHTMAP_DOUBLE, new FrequencyConfig(2)));
 			addFeature(GenerationStage.Decoration.UNDERGROUND_ORES,
-					Feature.DISK
-							.withConfiguration(new SphereReplaceConfig(Blocks.SAND.getDefaultState(), 7, 2,
-									Lists.newArrayList(Blocks.DIORITE.getDefaultState(), Blocks.STONE.getDefaultState())))
-							.withPlacement(Placement.COUNT_TOP_SOLID.configure(new FrequencyConfig(34))));
+					Biome.createDecoratedFeature(Feature.DISK,
+							new SphereReplaceConfig(Blocks.SAND.getDefaultState(), 7, 2,
+									Lists.newArrayList(Blocks.DIORITE.getDefaultState(), Blocks.STONE.getDefaultState())),
+							Placement.COUNT_TOP_SOLID, new FrequencyConfig(34)));
 			addFeature(GenerationStage.Decoration.UNDERGROUND_ORES,
-					Feature.DISK
-							.withConfiguration(new SphereReplaceConfig(Blocks.GRAVEL.getDefaultState(), 6, 2,
-									Lists.newArrayList(Blocks.DIORITE.getDefaultState(), Blocks.STONE.getDefaultState())))
-							.withPlacement(Placement.COUNT_TOP_SOLID.configure(new FrequencyConfig(16))));
+					Biome.createDecoratedFeature(Feature.DISK,
+							new SphereReplaceConfig(Blocks.GRAVEL.getDefaultState(), 6, 2,
+									Lists.newArrayList(Blocks.DIORITE.getDefaultState(), Blocks.STONE.getDefaultState())),
+							Placement.COUNT_TOP_SOLID, new FrequencyConfig(16)));
 			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.AREA_EFFECT_CLOUD, 15, 1, 5));
 			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.SKELETON, 15, 1, 5));
 			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.CREEPER, 15, 1, 5));
@@ -117,31 +116,30 @@ public class InbetweenBiome extends InbetweendimensionModElements.ModElement {
 
 		@OnlyIn(Dist.CLIENT)
 		@Override
-		public int getGrassColor(double posX, double posZ) {
+		public int getGrassColor(BlockPos pos) {
 			return -1;
 		}
 
 		@OnlyIn(Dist.CLIENT)
 		@Override
-		public int getFoliageColor() {
+		public int getFoliageColor(BlockPos pos) {
 			return -1;
 		}
 
 		@OnlyIn(Dist.CLIENT)
 		@Override
-		public int getSkyColor() {
+		public int getSkyColorByTemp(float currentTemperature) {
 			return -5916161;
 		}
 	}
 
-	static class CustomTreeFeature extends AbstractTreeFeature<BaseTreeFeatureConfig> {
+	static class CustomTreeFeature extends AbstractTreeFeature<NoFeatureConfig> {
 		CustomTreeFeature() {
-			super(BaseTreeFeatureConfig::deserialize);
+			super(NoFeatureConfig::deserialize, false);
 		}
 
 		@Override
-		protected boolean place(IWorldGenerationReader worldgen, Random rand, BlockPos position, Set<BlockPos> changedBlocks,
-				Set<BlockPos> changedBlocks2, MutableBoundingBox bbox, BaseTreeFeatureConfig conf) {
+		public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldgen, Random rand, BlockPos position, MutableBoundingBox bbox) {
 			if (!(worldgen instanceof IWorld))
 				return false;
 			IWorld world = (IWorld) worldgen;
@@ -279,7 +277,7 @@ public class InbetweenBiome extends InbetweendimensionModElements.ModElement {
 		}
 
 		private void setTreeBlockState(Set<BlockPos> changedBlocks, IWorldWriter world, BlockPos pos, BlockState state, MutableBoundingBox mbb) {
-			super.func_227217_a_(world, pos, state, mbb);
+			super.setLogState(changedBlocks, world, pos, state, mbb);
 			changedBlocks.add(pos.toImmutable());
 		}
 	}

@@ -22,10 +22,10 @@ public class IgniterItemInInventoryTickProcedure extends InbetweendimensionModEl
 
 	@SubscribeEvent
 	public void onPickup(EntityItemPickupEvent event) {
-		PlayerEntity entity = event.getPlayer();
-		int i = (int) entity.getPosX();
-		int j = (int) entity.getPosY();
-		int k = (int) entity.getPosZ();
+		PlayerEntity entity = event.getEntityPlayer();
+		int i = (int) entity.posX;
+		int j = (int) entity.posY;
+		int k = (int) entity.posZ;
 		World world = entity.world;
 		java.util.HashMap<String, Object> dependencies = new java.util.HashMap<>();
 		dependencies.put("x", i);

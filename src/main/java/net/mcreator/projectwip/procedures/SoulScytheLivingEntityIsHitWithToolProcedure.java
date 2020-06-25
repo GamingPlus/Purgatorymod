@@ -51,9 +51,9 @@ public class SoulScytheLivingEntityIsHitWithToolProcedure extends Inbetweendimen
 		if (event != null && event.getEntity() != null) {
 			Entity entity = event.getEntity();
 			Entity sourceentity = event.getSource().getTrueSource();
-			int i = (int) entity.getPosX();
-			int j = (int) entity.getPosY();
-			int k = (int) entity.getPosZ();
+			int i = (int) entity.posX;
+			int j = (int) entity.posY;
+			int k = (int) entity.posZ;
 			World world = entity.world;
 			java.util.HashMap<String, Object> dependencies = new java.util.HashMap<>();
 			dependencies.put("x", i);

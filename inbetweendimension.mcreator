@@ -755,15 +755,6 @@
       "registry_name": "purgatory_divine_2"
     },
     {
-      "name": "Spawn",
-      "type": "structure",
-      "sortid": 71,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "spawn"
-    },
-    {
       "name": "PurgatoryArrowLivingEntityIsHitWithItem",
       "type": "procedure",
       "sortid": 72,
@@ -838,8 +829,8 @@
   "language_map": {
     "en_us": {
       "item.inbetweendimension.the_inbetween": "The Inbetween Portal Igniter",
-      "item.inbetweendimension.igniter": "Igniter",
       "item.inbetweendimension.good_soul": "Good Soul",
+      "item.inbetweendimension.igniter": "Igniter",
       "itemGroup.tabsoul_tab": "Soul Tab",
       "item.projectwip.the_inbetween": "The Inbetween Portal Igniter",
       "item.projectwip.igniter": "Igniter",
@@ -879,8 +870,8 @@
   },
   "workspaceSettings": {
     "modid": "inbetweendimension",
-    "modName": "InBetween Mod",
-    "version": "1.1",
+    "modName": "PurgatoryMod",
+    "version": "1.3",
     "description": "The Dimension Between Heaven And Hell",
     "author": "GamingPlus_",
     "websiteURL": "https://mcreator.net",
@@ -891,7 +882,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.15.2",
+    "currentGenerator": "forge-1.14.4",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.projectwip",
     "lockBaseModFiles": false
