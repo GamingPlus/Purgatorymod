@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[28,)"
+loaderVersion="[31,)"
 
 [[mods]]
 modId="inbetweendimension"
@@ -16,14 +16,14 @@ The Dimension Between Heaven And Hell
 [[dependencies.inbetweendimension]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.14.4]"
+    versionRange="[1.15.2]"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.inbetweendimension]]
     modId="forge"
     mandatory=true
-    versionRange="[28.2.16]"
+    versionRange="[31.2.0]"
     ordering="NONE"
     side="BOTH"
 

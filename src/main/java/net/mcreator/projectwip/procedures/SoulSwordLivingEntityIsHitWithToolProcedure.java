@@ -17,6 +17,6 @@ public class SoulSwordLivingEntityIsHitWithToolProcedure extends Inbetweendimens
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		entity.attackEntityFrom(DamageSource.GENERIC, (float) 7);
+		entity.attackEntityFrom(DamageSource.MAGIC, (float) 9);
 	}
 }

@@ -829,8 +829,8 @@
   "language_map": {
     "en_us": {
       "item.inbetweendimension.the_inbetween": "The Inbetween Portal Igniter",
-      "item.inbetweendimension.good_soul": "Good Soul",
       "item.inbetweendimension.igniter": "Igniter",
+      "item.inbetweendimension.good_soul": "Good Soul",
       "itemGroup.tabsoul_tab": "Soul Tab",
       "item.projectwip.the_inbetween": "The Inbetween Portal Igniter",
       "item.projectwip.igniter": "Igniter",
@@ -882,7 +882,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.14.4",
+    "currentGenerator": "forge-1.15.2",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.projectwip",
     "lockBaseModFiles": false

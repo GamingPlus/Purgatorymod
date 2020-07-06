@@ -43,9 +43,9 @@ public class IgniterItemIsCraftedsmeltedProcedure extends InbetweendimensionModE
 	public void onItemCrafted(PlayerEvent.ItemCraftedEvent event) {
 		Entity entity = event.getPlayer();
 		World world = entity.world;
-		int i = (int) entity.posX;
-		int j = (int) entity.posY;
-		int k = (int) entity.posZ;
+		int i = (int) entity.getPosX();
+		int j = (int) entity.getPosY();
+		int k = (int) entity.getPosZ();
 		ItemStack itemStack = event.getCrafting();
 		java.util.HashMap<String, Object> dependencies = new java.util.HashMap<>();
 		dependencies.put("x", i);

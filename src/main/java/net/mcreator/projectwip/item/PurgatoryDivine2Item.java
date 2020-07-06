@@ -73,9 +73,9 @@ public class PurgatoryDivine2Item extends InbetweendimensionModElements.ModEleme
 			@Override
 			public boolean hitEntity(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 				boolean retval = super.hitEntity(itemstack, entity, sourceentity);
-				int x = (int) entity.posX;
-				int y = (int) entity.posY;
-				int z = (int) entity.posZ;
+				int x = (int) entity.getPosX();
+				int y = (int) entity.getPosY();
+				int z = (int) entity.getPosZ();
 				World world = entity.world;
 				{
 					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();

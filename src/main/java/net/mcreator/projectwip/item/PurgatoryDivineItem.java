@@ -55,9 +55,9 @@ public class PurgatoryDivineItem extends InbetweendimensionModElements.ModElemen
 			public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity entity, Hand hand) {
 				ActionResult<ItemStack> retval = super.onItemRightClick(world, entity, hand);
 				ItemStack itemstack = retval.getResult();
-				int x = (int) entity.posX;
-				int y = (int) entity.posY;
-				int z = (int) entity.posZ;
+				int x = (int) entity.getPosX();
+				int y = (int) entity.getPosY();
+				int z = (int) entity.getPosZ();
 				{
 					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
 					$_dependencies.put("x", x);
@@ -94,9 +94,9 @@ public class PurgatoryDivineItem extends InbetweendimensionModElements.ModElemen
 			@Override
 			public boolean hitEntity(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 				boolean retval = super.hitEntity(itemstack, entity, sourceentity);
-				int x = (int) entity.posX;
-				int y = (int) entity.posY;
-				int z = (int) entity.posZ;
+				int x = (int) entity.getPosX();
+				int y = (int) entity.getPosY();
+				int z = (int) entity.getPosZ();
 				World world = entity.world;
 				{
 					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
